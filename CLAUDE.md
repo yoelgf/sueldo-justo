@@ -1,8 +1,8 @@
-# Curro — Developer Guide
+# Sueldo Justo — Developer Guide
 
 A Spanish job app for the whole job lifecycle. Job seekers swipe through offers that each show a salary badge from their convenio colectivo, get an AI-tailored CV and carta for every offer, and keep using the app after they are hired to check their contract, nóminas and finiquito.
 
-"Curro" is a working name (alternatives: Nómina+, Sueldo Justo); name and domain still to check.
+Name chosen 2026-11-12 (earlier working name: Curro); domain still to check.
 
 ## 📋 Project Overview
 

@@ -1,4 +1,4 @@
-<!-- SPEC-ID: 001 | Date: 2026-11-12 | Type: Validation | Status: DRAFT 2026-11-12 (to challenge) -->
+<!-- SPEC-ID: 001 | Date: 2026-11-12 | Type: Validation | Status: CHALLENGED 2026-11-12 (3 open questions) -->
 
 # 001: Validation — Task
 
@@ -86,15 +86,16 @@ Any app code, AI, accounts, job feed, swipe deck, contract or nómina checks, Ca
 
 1. **MVP shape:** "paste an offer" (badge + tailored CV + tracker); swipe deck later, once a legal job feed exists.
 2. **Market:** the whole of Spain via estatal convenios first, not one region.
-3. **Repo:** private GitHub repo `yoelgf/curro`; "Curro" is a working name.
+3. **Name:** "Sueldo Justo" (chosen over Curro and Nómina+ because it states the promise).
+4. **Form storage:** a form tool (Tally or Formspree), live in minutes; the privacy notice names it as the processor.
+5. **Traffic:** Google Ads (€100–150 cap) plus community posts.
+6. **Go/no-go thresholds:** accepted as drafted above.
 
 ## ❓ Open Questions
 
-1. **Name and domain:** keep "Curro" for the landing page, or test another name? Which domain (.es / .app)?
-2. **Convenios for the check:** which 3–5 sectors? (Claude to verify which candidates have an estatal salary table.)
-3. **Form storage:** Cloudflare (Worker + D1/KV, more setup) or a form tool (Tally, Formspree; faster, an external processor)?
-4. **Paid traffic:** OK with €100–150 on Google Ads, or communities only?
-5. **Go/no-go thresholds:** accept the numbers above or change them?
+1. **Domain:** which one (sueldojusto.es / .app / other) — availability to check by Yoel.
+2. **Convenios for the check:** which 3–5 sectors? Candidates with a state-wide (estatal) convenio: contact center, seguridad privada, ETT, consultoría, grandes almacenes; the current table year to verify for each.
+3. **Repo name:** `yoelgf/sueldo-justo` (proposed) or keep `yoelgf/curro`.
 
 ---
 
