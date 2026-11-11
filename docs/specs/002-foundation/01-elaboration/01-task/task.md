@@ -1,4 +1,4 @@
-<!-- SPEC-ID: 002 | Date: 2026-11-12 | Type: Feature | Status: DRAFT 2026-11-12 (to challenge) -->
+<!-- SPEC-ID: 002 | Date: 2026-11-12 | Type: Feature | Status: LOCKED 2026-11-12 -->
 
 # 002: Foundation — Task
 
@@ -26,7 +26,7 @@ Yoel opens `sueldo-justo.pages.dev` on his iPhone, adds it to the home screen, l
 
 1. **App skeleton**
    - TypeScript (strict) + Vite, installable PWA (manifest, icons, offline shell). Mobile-first layout for 360–430 px wide screens.
-   - UI framework: to decide (see Open Questions); all user-facing text in `src/strings/es.ts`.
+   - UI framework: Preact; all user-facing text in `src/strings/es.ts`.
    - Routes for the MVP screens as placeholders: onboarding, paste an offer, offer result, tailored CV, my applications, settings.
 2. **Backend**
    - Cloudflare Workers (API under `/api`), deployed with Pages.
@@ -34,7 +34,7 @@ Yoel opens `sueldo-justo.pages.dev` on his iPhone, adds it to the home screen, l
    - Convenio knowledge base as typed data files in the repo (`data/convenios/`), loaded by the Worker; no database for it in the MVP (content as data).
 3. **Login**
    - Email magic link (no passwords). Session in an HttpOnly cookie.
-   - Email delivery through a transactional email service (to decide).
+   - Email delivery through Resend (EU region).
    - Delete my account: removes the user and all their data at once.
 4. **LLM gateway**
    - One backend module that every AI feature calls: provider and model set in config, API key only in Worker secrets, never in the app.
@@ -42,7 +42,7 @@ Yoel opens `sueldo-justo.pages.dev` on his iPhone, adds it to the home screen, l
    - Per-user daily limit and a global monthly spend cap that turns AI features off with a friendly message.
    - Test endpoint `/api/ai/ping` (admin only).
 5. **Documents and privacy**
-   - CVs are parsed in the request and kept only if the user saves them; saved CVs stored encrypted (to decide: D1 field or R2 object).
+   - CVs are parsed in the request and kept only if the user saves them; saved CVs stored as extracted text, encrypted in a D1 field; the original file is not kept.
    - Privacy policy and legal notice pages in Spanish; cookie use limited to the session cookie and privacy-friendly analytics.
 6. **Builds and CI**
    - GitHub Actions: typecheck, lint, tests on every push; deploy to Cloudflare Pages on main, preview link per branch (same as Idle Love & Lava).
@@ -51,7 +51,7 @@ Yoel opens `sueldo-justo.pages.dev` on his iPhone, adds it to the home screen, l
 ### Non-Functional Requirements
 
 - **Performance:** first load under 2 s on 4G on Yoel's iPhone; app shell under 150 KB gzipped.
-- **Cost:** €0 fixed cost on free tiers until real users; LLM spend capped (value to decide).
+- **Cost:** €0 fixed cost on free tiers until real users; LLM spend capped at €20 a month.
 - **Privacy:** GDPR basics from day one: data minimisation, delete account, no document text in logs, EU data location where the service allows.
 - **Accessibility:** readable at 200% text size; colour is never the only signal (the badge uses icon + text).
 
@@ -82,14 +82,15 @@ Convenio data (003), salary badge (004), offer extraction (005), tailored CV (00
 1. **Starts after a "go" from 001.**
 2. **Hosting:** Cloudflare Pages + Workers + D1 (free tiers), same family as Idle Love & Lava.
 3. **Convenio data lives in the repo as typed files**, not in the database, for the MVP.
+4. **UI framework:** Preact.
+5. **LLM provider:** Claude, through a provider-neutral gateway; a small model for extraction, a larger one for CV writing (exact models chosen in 005 and 006).
+6. **Login email:** Resend, EU region.
+7. **Saved CVs:** extracted text, encrypted in a D1 field; original files are never stored (Claude's call: CVs are small and this avoids a second store).
+8. **LLM spend cap:** €20 a month, then AI features switch off with a friendly message.
 
 ## ❓ Open Questions
 
-1. **UI framework:** plain TypeScript + a small view layer (like Idle Love & Lava), Preact, or Svelte? (Claude leans to Preact: small, familiar React model, good for forms and lists.)
-2. **LLM provider and model:** Claude (Haiku-class for extraction, Sonnet-class for CV writing?), another provider, or decide per feature in 005/006?
-3. **Email service for magic links:** Resend, Postmark or Cloudflare Email Sending?
-4. **Saved CVs:** encrypted field in D1 or encrypted object in R2?
-5. **Monthly LLM spend cap:** €20? €50?
+None.
 
 ---
 

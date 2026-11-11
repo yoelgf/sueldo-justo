@@ -12,15 +12,17 @@ Name chosen 2026-11-12 (earlier working name: Curro). Placeholder domain: sueldo
 - **Proposal doc:** https://claude.ai/artifact/MUUgk5RfiJiMF8huLU9JQF
 - **Research:** `docs/research/` (job-market pain points, Sprout teardown, combined concept; 2026-11-12).
 
-## 🛠️ Tech Stack (proposed, decided in spec 002)
+## 🛠️ Tech Stack (decided in spec 002)
 
 | Layer | Technology |
 |-------|-----------|
 | Language | TypeScript (strict) |
-| App | Vite web app, wrapped with Capacitor for iPhone first (same approach as Idle Love & Lava) |
-| Backend | Cloudflare Workers + Pages (to confirm: storage for the convenio knowledge base) |
-| AI | An LLM API for tailored CVs, cartas and document checks, called from the backend only |
-| Convenio knowledge base | Structured salary tables + source texts, with retrieval for the AI checks |
+| App | Preact + Vite, installable PWA; Capacitor iPhone app later |
+| Backend | Cloudflare Workers (API under `/api`) + Pages |
+| Database | Cloudflare D1 (users, profiles, applications); migrations in the repo |
+| Convenio knowledge base | Typed data files in `data/convenios/` |
+| AI | Claude via one backend LLM gateway; keys only in Worker secrets; €20/month spend cap |
+| Login | Email magic link sent with Resend (EU) |
 | Tests | Vitest |
 
 ## 📐 Code Conventions
