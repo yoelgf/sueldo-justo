@@ -1,6 +1,6 @@
 # Sueldo Justo — Developer Guide
 
-A Spanish job app for the whole job lifecycle. Job seekers swipe through offers that each show a salary badge from their convenio colectivo, get an AI-tailored CV and carta for every offer, and keep using the app after they are hired to check their contract, nóminas and finiquito.
+A Spanish job app for the whole job lifecycle. Job seekers paste an offer (a swipe deck comes once a legal job feed exists) and see a salary badge from their convenio colectivo, get an AI-tailored CV and carta for every offer, and keep using the app after they are hired to check their contract, nóminas and finiquito.
 
 Name chosen 2026-11-12 (earlier working name: Curro); domain still to check.
 
@@ -8,7 +8,7 @@ Name chosen 2026-11-12 (earlier working name: Curro); domain still to check.
 
 - **Market:** the whole of Spain. Convenio coverage grows in stages: state-wide (estatal) convenios first, then the provincial convenios of the biggest job markets (Madrid, Barcelona, Valencia, Málaga, Sevilla), then Cataluña in depth, then the rest.
 - **Language:** Spanish at launch; all user-facing text lives in string files (Catalan later).
-- **Monetisation (to test):** weekly subscription while job hunting, one-off checks (contract, nómina, finiquito), a monthly plan after hiring, lawyer referral fees, and a free tier (swipe + salary badge + a few tailored CVs).
+- **Monetisation (to test):** weekly subscription while job hunting, one-off checks (contract, nómina, finiquito), a monthly plan after hiring, lawyer referral fees, and a free tier (unlimited salary badges + 3 tailored CVs a week).
 - **Proposal doc:** https://claude.ai/artifact/MUUgk5RfiJiMF8huLU9JQF
 - **Research:** `docs/research/` (job-market pain points, Sprout teardown, combined concept; 2026-11-12).
 
