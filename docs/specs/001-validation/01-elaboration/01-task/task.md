@@ -1,4 +1,4 @@
-<!-- SPEC-ID: 001 | Date: 2026-11-12 | Type: Validation | Status: CHALLENGED 2026-11-12 (3 open questions) -->
+<!-- SPEC-ID: 001 | Date: 2026-11-12 | Type: Validation | Status: CHALLENGED 2026-11-12 (2 open questions) -->
 
 # 001: Validation — Task
 
@@ -90,12 +90,12 @@ Any app code, AI, accounts, job feed, swipe deck, contract or nómina checks, Ca
 4. **Form storage:** a form tool (Tally or Formspree), live in minutes; the privacy notice names it as the processor.
 5. **Traffic:** Google Ads (€100–150 cap) plus community posts.
 6. **Go/no-go thresholds:** accepted as drafted above.
+7. **Repo:** private GitHub repo `yoelgf/sueldo-justo`.
 
 ## ❓ Open Questions
 
 1. **Domain:** which one (sueldojusto.es / .app / other) — availability to check by Yoel.
 2. **Convenios for the check:** which 3–5 sectors? Candidates with a state-wide (estatal) convenio: contact center, seguridad privada, ETT, consultoría, grandes almacenes; the current table year to verify for each.
-3. **Repo name:** `yoelgf/sueldo-justo` (proposed) or keep `yoelgf/curro`.
 
 ---
 
