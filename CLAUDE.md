@@ -2,7 +2,7 @@
 
 A Spanish job app for the whole job lifecycle. Job seekers paste an offer (a swipe deck comes once a legal job feed exists) and see a salary badge from their convenio colectivo, get an AI-tailored CV and carta for every offer, and keep using the app after they are hired to check their contract, nóminas and finiquito.
 
-Name chosen 2026-11-12 (earlier working name: Curro); domain still to check.
+Name chosen 2026-11-12 (earlier working name: Curro). Placeholder domain: sueldo-justo.pages.dev.
 
 ## 📋 Project Overview
 

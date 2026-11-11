@@ -8,7 +8,7 @@
 
 | # | ID | Title | Type | Phase | Created | Updated | Status | Docs |
 |---|----|-------|------|-------|---------|---------|--------|------|
-| 1 | 001 | Validation: landing page and manual check | Validation | Elaboration (task challenged) | 2026-11-12 | 2026-11-12 | 🟡 2 open questions | [docs](001-validation/) |
+| 1 | 001 | Validation: landing page and manual check | Validation | Elaboration (task challenged) | 2026-11-12 | 2026-11-12 | 🟡 1 open question (convenios) | [docs](001-validation/) |
 
 **MVP shape (decided 2026-11-12):** "paste an offer" instead of a swipe deck. The user pastes an offer link or text and gets a convenio salary badge, an AI-tailored CV and carta, and an applications tracker. The swipe deck waits until a legal job feed is solved.
 

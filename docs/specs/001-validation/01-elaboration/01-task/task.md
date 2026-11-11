@@ -1,4 +1,4 @@
-<!-- SPEC-ID: 001 | Date: 2026-11-12 | Type: Validation | Status: CHALLENGED 2026-11-12 (2 open questions) -->
+<!-- SPEC-ID: 001 | Date: 2026-11-12 | Type: Validation | Status: CHALLENGED 2026-11-12 (1 open question) -->
 
 # 001: Validation — Task
 
@@ -91,11 +91,21 @@ Any app code, AI, accounts, job feed, swipe deck, contract or nómina checks, Ca
 5. **Traffic:** Google Ads (€100–150 cap) plus community posts.
 6. **Go/no-go thresholds:** accepted as drafted above.
 7. **Repo:** private GitHub repo `yoelgf/sueldo-justo`.
+8. **Domain:** free placeholder `sueldo-justo.pages.dev` (Cloudflare Pages); buy a real domain only after a go.
 
 ## ❓ Open Questions
 
-1. **Domain:** which one (sueldojusto.es / .app / other) — availability to check by Yoel.
-2. **Convenios for the check:** which 3–5 sectors? Candidates with a state-wide (estatal) convenio: contact center, seguridad privada, ETT, consultoría, grandes almacenes; the current table year to verify for each.
+1. **Convenios for the check (proposed, to confirm):**
+
+| Convenio (estatal) | Latest tables | Valid until | Note |
+|---|---|---|---|
+| Seguridad privada (99004615011982) | 2026, new convenio in BOE 18 Apr 2026 | 2030 | Same tables in every province; most stable choice |
+| Consultoría, TI y estudios de mercado, XIX (99001355011983) | 2026–2027, adapted to SMI, BOE 24 Apr 2026 | 2027 | Tech and office jobs; an audience Yoel can reach |
+| Contact center, III (99012145012002) | 2026, BOE 6 Mar 2026 | 31 Dec 2026 | High turnover, many offers; renewal due for 2027 |
+| Grandes almacenes (99002405011982) | 2026, BOE 12 Feb 2026, revised June 2026 | 31 Dec 2026 | Retail; renewal due for 2027 |
+| Grandes cadenas de comercio textil y calzado, I (optional 5th) | 2026–2028, BOE 30 Jul 2026 | 2028 | New convenio; fashion retail chains |
+
+Dropped: ETT. Its estatal convenio covers the agency's own staff; workers placed at client companies are paid under the client's convenio, so it would not give the badge.
 
 ---
 
